@@ -1,5 +1,6 @@
 # SpriterPlusPlus
-a C++ Implementation for Spriter animations
+a C++ Implementation for Spriter animations.
+
 Please see main source for latest code at: https://github.com/lucidspriter/SpriterPlusPlus
 
 ## About
