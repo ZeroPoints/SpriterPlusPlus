@@ -1,5 +1,6 @@
 # SpriterPlusPlus
 a C++ Implementation for Spriter animations
+Please see main source for latest code at: https://github.com/lucidspriter/SpriterPlusPlus
 
 ## About
 SpriterPlusPlus aims to be as quick as possible playing back animations, and iterating additional characters once loaded.
@@ -7,7 +8,7 @@ Additional instances are flyweights that take up less ram than the initially the
 Each flyweight instance minimizes cycles spent in random access and iteratating through containers using stored pointers and iterators wherever possible.
 
 ## Included example
-Sfml for display and sound playback
+Allegro for display (sound playback not done)
 
 Two examples for loading: TinyXml and PugiXml
 
