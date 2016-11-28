@@ -12,32 +12,31 @@
 
 #include "jsonspriterfiledocumentwrapper.h"
 
-#include "sfmlimagefile.h"
-#include "sfmlatlasfile.h"
-#include "sfmlsoundfile.h"
+#include "allegroimagefile.h"
+#include "allegroatlasfile.h"
+#include "allegrosoundfile.h"
 
 namespace SpriterEngine
 {
 
-	ExampleFileFactory::ExampleFileFactory(sf::RenderWindow *validRenderWindow) :
-		renderWindow(validRenderWindow)
+	ExampleFileFactory::ExampleFileFactory() 
 	{
 	}
 
 	ImageFile * ExampleFileFactory::newImageFile(const std::string &initialFilePath, point initialDefaultPivot, atlasdata atlasData)
 	{
-		return new SfmlImageFile(initialFilePath, initialDefaultPivot, renderWindow);
+		return new AllegroImageFile(initialFilePath, initialDefaultPivot);
 	}
 
 	AtlasFile *ExampleFileFactory::newAtlasFile(const std::string &initialFilePath)
 	{
-		return new SfmlAtlasFile(initialFilePath);
+		return new AllegroAtlasFile(initialFilePath);
 
 	}
 
 	SoundFile * ExampleFileFactory::newSoundFile(const std::string & initialFilePath)
 	{
-		return new SfmlSoundFile(initialFilePath);
+		return new AllegroSoundFile(initialFilePath);
 	}
 
 	SpriterFileDocumentWrapper * ExampleFileFactory::newScmlDocumentWrapper()

@@ -1,7 +1,7 @@
 #ifndef EXAMPLEOBJECTFACTORY_H
 #define EXAMPLEOBJECTFACTORY_H
 
-#include "SFML/Graphics/RenderWindow.hpp"
+//#include "SFML/Graphics/RenderWindow.hpp"
 
 #include "../../spriterengine/override/objectfactory.h"
 
@@ -11,7 +11,7 @@ namespace SpriterEngine
 	class ExampleObjectFactory : public ObjectFactory
 	{
 	public:
-		ExampleObjectFactory(sf::RenderWindow *validRenderWindow);
+		ExampleObjectFactory();
 		
 		PointInstanceInfo *newPointInstanceInfo() override;
 
@@ -20,7 +20,6 @@ namespace SpriterEngine
 		BoneInstanceInfo *newBoneInstanceInfo(point size) override;
 
 	private:
-		sf::RenderWindow *renderWindow;
 	};
 
 }

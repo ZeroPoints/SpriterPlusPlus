@@ -88,13 +88,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)\SFML-2.3.2\include%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\include;$(ProjectDir)\SFML-2.3.2\include%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)\SFML-2.3.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,11 +104,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SFML-2.3.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\include;SFML-2.3.2\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -120,15 +122,15 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(ProjectDir)\SFML-2.3.2\include%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\include;$(ProjectDir)\SFML-2.3.2\include%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(ProjectDir)\SFML-2.3.2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <Profile>true</Profile>
     </Link>
   </ItemDefinitionGroup>
@@ -141,7 +143,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SFML-2.3.2\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\include;F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -149,22 +151,27 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <Profile>true</Profile>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>F:\GITHUB\SpriterPlusPlus\allegro-5.0.10-msvc-11.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="example\main.cpp" />
     <ClCompile Include="example\override\examplefilefactory.cpp" />
     <ClCompile Include="example\override\exampleobjectfactory.cpp" />
+    <ClCompile Include="example\override\jsonspriterfileattributewrapper.cpp" />
+    <ClCompile Include="example\override\jsonspriterfiledocumentwrapper.cpp" />
+    <ClCompile Include="example\override\jsonspriterfileelementwrapper.cpp" />
     <ClCompile Include="example\override\pugixmlspriterfileattributewrapper.cpp" />
     <ClCompile Include="example\override\pugixmlspriterfiledocumentwrapper.cpp" />
     <ClCompile Include="example\override\pugixmlspriterfileelementwrapper.cpp" />
-    <ClCompile Include="example\override\sfmlboneinstanceinfo.cpp" />
-    <ClCompile Include="example\override\sfmlboxinstanceinfo.cpp" />
-    <ClCompile Include="example\override\sfmlimagefile.cpp" />
-    <ClCompile Include="example\override\sfmlpointinstanceinfo.cpp" />
-    <ClCompile Include="example\override\sfmlsoundfile.cpp" />
-    <ClCompile Include="example\override\sfmlsoundobjectinforeference.cpp" />
+    <ClCompile Include="example\override\allegroatlasfile.cpp" />
+    <ClCompile Include="example\override\allegroboneinstanceinfo.cpp" />
+    <ClCompile Include="example\override\allegroboxinstanceinfo.cpp" />
+    <ClCompile Include="example\override\allegroimagefile.cpp" />
+    <ClCompile Include="example\override\allegropointinstanceinfo.cpp" />
+    <ClCompile Include="example\override\allegrosoundfile.cpp" />
+    <ClCompile Include="example\override\allegrosoundobjectinforeference.cpp" />
     <ClCompile Include="example\override\tinyxmlspriterfileattributewrapper.cpp" />
     <ClCompile Include="example\override\tinyxmlspriterfiledocumentwrapper.cpp" />
     <ClCompile Include="example\override\tinyxmlspriterfileelementwrapper.cpp" />
@@ -214,6 +221,7 @@
     <ClCompile Include="spriterengine\objectref\spriterefinstance.cpp" />
     <ClCompile Include="spriterengine\objectref\spriteref.cpp" />
     <ClCompile Include="spriterengine\objectref\transformprocessor.cpp" />
+    <ClCompile Include="spriterengine\override\atlasfile.cpp" />
     <ClCompile Include="spriterengine\override\filefactory.cpp" />
     <ClCompile Include="spriterengine\override\imagefile.cpp" />
     <ClCompile Include="spriterengine\override\objectfactory.cpp" />
@@ -247,15 +255,19 @@
   <ItemGroup>
     <ClInclude Include="example\override\examplefilefactory.h" />
     <ClInclude Include="example\override\exampleobjectfactory.h" />
+    <ClInclude Include="example\override\jsonspriterfileattributewrapper.h" />
+    <ClInclude Include="example\override\jsonspriterfiledocumentwrapper.h" />
+    <ClInclude Include="example\override\jsonspriterfileelementwrapper.h" />
     <ClInclude Include="example\override\pugixmlspriterfileattributewrapper.h" />
     <ClInclude Include="example\override\pugixmlspriterfiledocumentwrapper.h" />
     <ClInclude Include="example\override\pugixmlspriterfileelementwrapper.h" />
-    <ClInclude Include="example\override\sfmlboneinstanceinfo.h" />
-    <ClInclude Include="example\override\sfmlboxinstanceinfo.h" />
-    <ClInclude Include="example\override\sfmlimagefile.h" />
-    <ClInclude Include="example\override\sfmlpointinstanceinfo.h" />
-    <ClInclude Include="example\override\sfmlsoundfile.h" />
-    <ClInclude Include="example\override\sfmlsoundobjectinforeference.h" />
+    <ClInclude Include="example\override\allegroatlasfile.h" />
+    <ClInclude Include="example\override\allegroboneinstanceinfo.h" />
+    <ClInclude Include="example\override\allegroboxinstanceinfo.h" />
+    <ClInclude Include="example\override\allegroimagefile.h" />
+    <ClInclude Include="example\override\allegropointinstanceinfo.h" />
+    <ClInclude Include="example\override\allegrosoundfile.h" />
+    <ClInclude Include="example\override\allegrosoundobjectinforeference.h" />
     <ClInclude Include="example\override\tinyxmlspriterfileattributewrapper.h" />
     <ClInclude Include="example\override\tinyxmlspriterfiledocumentwrapper.h" />
     <ClInclude Include="example\override\tinyxmlspriterfileelementwrapper.h" />
@@ -308,6 +320,7 @@
     <ClInclude Include="spriterengine\objectref\spriterefinstance.h" />
     <ClInclude Include="spriterengine\objectref\spriteref.h" />
     <ClInclude Include="spriterengine\objectref\transformprocessor.h" />
+    <ClInclude Include="spriterengine\override\atlasfile.h" />
     <ClInclude Include="spriterengine\override\filefactory.h" />
     <ClInclude Include="spriterengine\override\imagefile.h" />
     <ClInclude Include="spriterengine\override\objectfactory.h" />

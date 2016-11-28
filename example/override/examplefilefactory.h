@@ -3,7 +3,7 @@
 
 #include "../../spriterengine/override/filefactory.h"
 
-#include "SFML/Graphics.hpp"
+//#include "SFML/Graphics.hpp"
 
 namespace SpriterEngine
 {
@@ -11,7 +11,7 @@ namespace SpriterEngine
 	class ExampleFileFactory : public FileFactory
 	{
 	public:
-		ExampleFileFactory(sf::RenderWindow *validRenderWindow);
+		ExampleFileFactory();
 		
 		ImageFile *newImageFile(const std::string &initialFilePath, point initialDefaultPivot, atlasdata atlasData) override;
 
@@ -24,7 +24,6 @@ namespace SpriterEngine
 		SpriterFileDocumentWrapper *newSconDocumentWrapper() override;
 
 	private:
-		sf::RenderWindow *renderWindow;
 	};
 
 }

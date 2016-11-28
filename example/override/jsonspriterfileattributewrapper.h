@@ -2,7 +2,7 @@
 #define JSONSPRITERFILEATTRIBUTEWRAPPER_H
 
 #include "../../spriterengine/override/spriterfileattributewrapper.h"
-#include "json.hpp"
+#include "../../nlohmann-json/json.hpp"
 
 using json = nlohmann::json;
 
